@@ -17,7 +17,7 @@ jobs:
         run: |
           echo "The value of the environment variable is: ${{ env.TEST_ENV_VARIABLE_1 }}"
       - name: Check environment variable 2
-        env:
-          TEST_ENV_VARIABLE_2: my_var_2
         run: |
           echo "The value of the environment variable is: ${{ env.TEST_ENV_VARIABLE_2 }}"
+        env:
+          TEST_ENV_VARIABLE_2: my_var_2
